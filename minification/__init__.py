@@ -36,11 +36,11 @@ class Minification(object):
                             remove_optional_attribute_quotes=False,
                         )
                     )
-                elif fnmatch(name, '*.css'):
-                    self.write_to_file(
-                        path_file,
-                        lambda content: csscompressor.compress(content)
-                    )
+                #elif fnmatch(name, '*.css'):
+                #    self.write_to_file(
+                #        path_file,
+                #        lambda content: csscompressor.compress(content)
+                #    )
 
     @staticmethod
     def write_to_file(path_file, callback):
